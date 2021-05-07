@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/Sansation_Regular.ttf") format("ttf"), url("../fonts/Sansation_Regular.woff") format("woff"), url("../fonts/Sansation_Regular.svg") format("svg"), url("../fonts/Sansation_Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/Sansation_Bold.ttf") format("ttf"), url("../fonts/Sansation_Bold.woff") format("woff"), url("../fonts/Sansation_Bold.svg") format("svg"), url("../fonts/Sansation_Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik_Regular.ttf") format("ttf"), url("../fonts/Rubik_Regular.woff") format("woff"), url("../fonts/Rubik_Regular.svg") format("svg"), url("../fonts/Rubik_Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik_Medium.ttf") format("ttf"), url("../fonts/Rubik_Medium.woff") format("woff"), url("../fonts/Rubik_Medium.svg") format("svg"), url("../fonts/Rubik_Medium.eot") format("eot");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik_Bold.ttf") format("ttf"), url("../fonts/Rubik_Bold.woff") format("woff"), url("../fonts/Rubik_Bold.svg") format("svg"), url("../fonts/Rubik_Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}

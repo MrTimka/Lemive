@@ -1,0 +1,64 @@
+@keyframes header-animation {
+    from {
+        transform: translateY(80px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes menu-button {
+    from {
+        transform: scale(1.5);				
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes menu-button_before {
+    from {
+        transform: translateX(16px);
+    }
+
+    50% {
+        transform: translateX(-3px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menu-button_after {
+    from {
+        transform: translateX(-16px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes triangle-rotate {
+    from {
+        transform: rotate(-30deg) skewX(-30deg) scale(1,.866);
+    }
+    to {
+        transform: rotate(330deg) skewX(-30deg) scale(1,.866);
+    }
+}
+
+@keyframes square-rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(-315deg);
+    }
+}
