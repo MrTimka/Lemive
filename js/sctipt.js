@@ -5,21 +5,9 @@ const body = document.querySelector('body');
 
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
-    //menu.classList.toggle('view');
+    menu.classList.toggle('hidden');
     menuList.classList.toggle('active');
     body.classList.toggle('no-scroll');
-
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        setTimeout(function () {
-            menuList.classList.remove('visuallyhidden');
-        }, 20);
-      } else {
-        menuList.classList.add('visuallyhidden');
-        setTimeout(function () {
-            menu.classList.add('hidden');
-          }, 20);
-      }
 });
 
 
