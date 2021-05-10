@@ -31,6 +31,10 @@ const slider = document.querySelector('.thumb-slider__input');
       repairValue = [];
       investValue = [];
       earnValue = [];
+      sliderProps = {
+        fill: "#2CD4D9 0%, rgba(20, 249, 255, 1)",
+        background: "#D8C4B6",
+      };
 
 function fillArray(array, firstValue, secondValue) {
   const difference = secondValue - firstValue;
@@ -41,8 +45,15 @@ function fillArray(array, firstValue, secondValue) {
   return array;
 }
 
-slider.oninput = () => {
-  output.innerHTML = `${parseInt(slider.value) + 20} м<sup>2</sup>`;
+function applyFill(slider) {
+  const percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
+  const bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage +
+      0.1}%)`;
+  slider.style.background = bg;
+}
+  slider.addEventListener("input", event => {
+	applyFill(event.target);
+  output.innerHTML = `${+slider.value + 20} м<sup>2</sup>`;
   income.innerHTML = `${fillArray(incomeValue, 345000, 362250)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;Р.`;
   gross.innerHTML = `${fillArray(grossValue, 172500, 181125)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;Р.`;
   profit.innerHTML = `${fillArray(profitValue, 87500, 94125)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;Р.`;
@@ -51,20 +62,4 @@ slider.oninput = () => {
   repair.innerHTML = `${fillArray(repairValue, 240000, 252000)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;Р.`;
   invest.innerHTML = `${fillArray(investValue, 610000, 639000)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;Р.`;
   earn.innerHTML = `${fillArray(earnValue, 87500, 94125)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;р./мес.`;
-}
-
-const sliderProps = {
-	fill: "#2CD4D9 0%, rgba(20, 249, 255, 1)",
-	background: "#D8C4B6",
-};
-
-slider.addEventListener("input", event => {
-	applyFill(event.target);
 });
-
-function applyFill(slider) {
-	const percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
-	const bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage +
-			0.1}%)`;
-	slider.style.background = bg;
-}
