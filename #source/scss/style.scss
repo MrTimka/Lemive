@@ -345,11 +345,15 @@ body.no-scroll {
 			cursor: pointer;
 			margin-top: 20px;
 			align-self: center;
-			margin-right: 40px;
 
 			&_submit {
 				width: 176px;
 			}
+		}
+
+		&__button:hover {
+			background-color: #fff;
+			color: #000;
 		}
 
 		&__input {
@@ -539,6 +543,11 @@ form {
 			margin: 20px 0;
 			padding: 0;
 			cursor: pointer;
+			transition: all 1s ease;
+		}
+
+		&__input::-webkit-slider-runnable-track {
+			transition: all 1s ease;
 		}
 
 		&__input::-webkit-slider-thumb {
@@ -548,9 +557,10 @@ form {
 			border-radius: 50%;
 			background: #FFFFFF;
 			box-shadow: -1px 2px 15px rgba(0, 0, 0, 0.31);
-			//box-shadow: -440px 0 0 430px #2CD4D9;
 			margin-top: 0;
 			cursor: pointer;
+			transition: all 1s ease;
+
 		}
 
 		&__input::-moz-range-thumb {
@@ -2127,6 +2137,7 @@ form {
 		}
 
 		&__button {
+			width: 100%;
 			margin-right: 0;
 		}
 	}
@@ -2243,7 +2254,7 @@ form {
 
 	.form {
 		&__button {
-			width: 240px;
+			width: 100%;
 			height: 65px;
 			margin: 10px 20px 0 20px;
 		}

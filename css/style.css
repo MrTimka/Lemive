@@ -480,10 +480,13 @@ body.no-scroll {
   cursor: pointer;
   margin-top: 20px;
   align-self: center;
-  margin-right: 40px;
 }
 .form__button_submit {
   width: 176px;
+}
+.form__button:hover {
+  background-color: #fff;
+  color: #000;
 }
 .form__input {
   color: #000;
@@ -632,6 +635,11 @@ form {
   margin: 20px 0;
   padding: 0;
   cursor: pointer;
+  transition: all 1s ease;
+}
+.thumb-slider__input::-webkit-slider-runnable-track {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .thumb-slider__input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -642,6 +650,8 @@ form {
   box-shadow: -1px 2px 15px rgba(0, 0, 0, 0.31);
   margin-top: 0;
   cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .thumb-slider__input::-moz-range-thumb {
   width: 30px;
@@ -1919,6 +1929,7 @@ form {
     flex-direction: column;
   }
   .form__button {
+    width: 100%;
     margin-right: 0;
   }
 
@@ -2004,7 +2015,7 @@ form {
   }
 
   .form__button {
-    width: 240px;
+    width: 100%;
     height: 65px;
     margin: 10px 20px 0 20px;
   }

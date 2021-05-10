@@ -1,3 +1,4 @@
+// menu
 const menuBtn = document.querySelector('.header__menu-button');
       menu = document.querySelector('.menu');
       menuList = document.querySelector('.menu__container');
@@ -10,6 +11,7 @@ menuBtn.addEventListener('click', () => {
     body.classList.toggle('no-scroll');
 });
 
+// range-slider
 const slider = document.querySelector('.thumb-slider__input');
       output = document.querySelector('.thumb-slider__value'); 
       track = document.querySelector('.thumb-slider__track');
@@ -51,31 +53,18 @@ slider.oninput = () => {
   earn.innerHTML = `${fillArray(earnValue, 87500, 94125)[slider.value].toLocaleString('ru-RU', 'currency')}&nbsp;р./мес.`;
 }
 
-slider.addEventListener('keydown', (e) => {
+const sliderProps = {
+	fill: "#2CD4D9 0%, rgba(20, 249, 255, 1)",
+	background: "#D8C4B6",
+};
 
-  if (e.key == 'ArrowRight') {
-    let x = parseInt(slider.value) * 3.48;
-    const color = `linear-gradient(90deg, #2CD4D9 0%, rgba(20, 249, 255, 1) ${x}%, #D8C4B6 ${x}%)`;
-    slider.style.background = color;
-    console.log('right');
-  } else {
-    let x = parseInt(slider.value) * 3.1;
-    const color = `linear-gradient(90deg, #2CD4D9 0%, rgba(20, 249, 255, 1) ${x}%, #D8C4B6 ${x}%)`;
-    slider.style.background = color;
-  }
+slider.addEventListener("input", event => {
+	applyFill(event.target);
 });
 
-slider.addEventListener('mousemove', () => {
-  let x = parseInt(slider.value) * 3.25;
-
-  const color = `linear-gradient(90deg, #2CD4D9 0%, rgba(20, 249, 255, 1) ${x}%, #D8C4B6 ${x}%)`;
-  slider.style.background = color;
-});
-
-slider.addEventListener('touchmove', (e) => {
-  let x = parseInt(slider.value) * 3.25;
-
-  const color = `linear-gradient(90deg, #2CD4D9 0%, rgba(20, 249, 255, 1) ${x}%, #D8C4B6 ${x}%)`;
-  slider.style.background = color;
-});
-
+function applyFill(slider) {
+	const percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
+	const bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage +
+			0.1}%)`;
+	slider.style.background = bg;
+}
