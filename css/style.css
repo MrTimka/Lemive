@@ -1462,15 +1462,14 @@ form {
     margin-bottom: 263px;
   }
   .about-us__background {
-    width: 968px;
     height: 520px;
     top: -54%;
-    left: -7.6%;
+    left: -9.6%;
   }
   .about-us__video {
     height: 520px;
     top: -54%;
-    left: -7.6%;
+    left: -9.6%;
   }
   .about-us__title {
     margin-bottom: 30px;
@@ -1767,14 +1766,13 @@ form {
     margin-bottom: 263px;
   }
   .about-us__background {
-    width: 680px;
     height: 520px;
-    top: -54%;
-    left: -3.2%;
+    top: -119px;
+    left: -10.2%;
   }
   .about-us__video {
     height: 520px;
-    top: -54%;
+    top: -119px;
     left: -52%;
   }
   .about-us__title {
@@ -2049,9 +2047,8 @@ form {
     margin-bottom: 185px;
   }
   .about-us__background {
-    width: 320px;
     height: 520px;
-    left: -7%;
+    left: -10%;
     top: -18%;
   }
   .about-us__video {
