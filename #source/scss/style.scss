@@ -732,14 +732,30 @@ form {
 .slider {
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 	&__container {
+		transition: transform .8s;
+	}
+
+	&__container.grab {
+		cursor: grab;
+	}
+
+	&__container.grabbing {
+		cursor: grabbing;
+	}
+
+	&__track {
 		display: flex;
-		transition: transform .8s ease;
 	}
 
 	&__item {
 		min-width: 100%;
 		margin-right: 20px;
+	}
+
+	&__img {
+		pointer-events: none;
 	}
 
 	&__text {

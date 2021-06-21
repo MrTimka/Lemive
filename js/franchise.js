@@ -69,7 +69,6 @@ let scrollWidth = 970;
 
 dots.forEach((item, i) => {
   item.addEventListener('click', () => {
-    console.log('click');
     scrollSlides(i);
     dots.forEach(item => {
       item.classList.remove('dot-active');

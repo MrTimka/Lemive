@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Франшиза</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header class="header">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lemive</title>
+		<meta name="description" content="A draggable menu that shows a thumbnail preview of an image grid" />
+		<meta name="keywords" content="draggable, menu, navigation, thumbnails, grid, javascript, gsap, web design, layout" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/icons/favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/crf4rue.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<header class="header">
+			<div class="background"></div>
             <div class="header__row">
                 <div class="header__logo-block">
                     <a href="franchise.html"><img src="img/icons/logo.svg" alt="Lemive" class="header__logo"></a>
@@ -23,271 +25,94 @@
                     <span></span>
                 </div>
             </div>
-            <nav class="menu hidden">
-                <div class="menu__container">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="index.html" class="menu__link">Франшиза</a></li>
-                        <li class="menu__item"><a href="advantages.html" class="menu__link">Преимущества</a></li>
-                        <li class="menu__item"><a href="production.html" class="menu__link">Производство</a></li>
-                        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+            <nav class="header-menu hidden">
+                <div class="header-menu__container">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item"><a href="index.html" class="header-menu__link">Франшиза</a></li>
+                        <li class="header-menu__item"><a href="advantages.html" class="header-menu__link">Преимущества</a></li>
+                        <li class="header-menu__item"><a href="production.html" class="header-menu__link">Производство</a></li>
+                        <li class="header-menu__item"><a href="contacts.html" class="header-menu__link">Контакты</a></li>
                     </ul>
-                    <div class="menu__social-block social-block">
+                    <div class="header-menu__social-block social-block">
                         <div class="social-block__item social-block__item_inst"></div>
                         <div class="social-block__item social-block__item_wu"></div>
                         <div class="social-block__item social-block__item_yt"></div>
                     </div>
                 </div>
             </nav>
-            <div class="header__content">
-                <h1 class="header__title">Франшиза</h1>
-                <button class="header__button">Назад</button>
-            </div>
+            <main>
+				<div class="page page--preview">
+					<div class="grid-wrap">
+						<div class="grid grid--layout-1">
+							<div class="video-wrapper">
+								<div class="video-box">
+									<div class="grid__item">
+										<video src="video/franchise.mp4" width="1920" height="1080" class="grid__item" autoplay muted loop></video>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid grid--layout-2">
+							<div class="grid__item">
+								<video src="video/advantages.mp4" width="1920" height="1080" class="grid__item" autoplay muted loop></video>
+							</div>
+						</div>
+						<div class="grid grid--layout-3">
+							<div class="grid__item">
+								<video src="video/franchise.mp4" width="1920" height="1080" class="grid__item" autoplay muted loop></video>
+							</div>
+						</div>
+						<div class="grid grid--layout-4">
+							<div class="grid__item">
+								<video src="video/contacts.mp4" width="1920" height="1080" class="grid__item" autoplay muted loop></video>
+							</div>
+						</div>
+						<button class="gridback"><svg width="27px" height="15px" viewBox="0 0 27 15"><path d="M1.469 6.75l-.719.719 7.938 6.937.718-.719L1.47 6.75zM8.594.531L.75 7.375l.688.688L9.28 1.218 8.594.53zM1.406 6.938v1h24.75v-1H1.406z" fill="#de6565"/></svg></button>
+					</div><!-- /grid-wrap -->
+				</div><!-- /page -->
+				<div class="menu-wrap">
+					<div class="menu-draggable"></div>
+					<nav class="menu">
+						<div class="menu__item">
+							<a class="menu__item-link">Франшиза</a>
+							<a href="franchise.html" class="menu__item-explore">Подробнее</a>
+						</div>
+						<div class="menu__item">
+							<a class="menu__item-link">Преимущества</a>
+							<a href="advantages.html" class="menu__item-explore">Подробнее</a>
+						</div>
+						<div class="menu__item">
+							<a class="menu__item-link">Производство</a>
+							<a href="production.html" class="menu__item-explore">Подробнее</a>
+						</div>
+						<div class="menu__item">
+							<a class="menu__item-link">Контакты</a>
+							<!-- <div class="menu__item-contacts">
+								<a href="tel:88007008565" class="menu__item-tel">88007008565</a>
+								<a href="mailto:info@lemive.com" class="menu__item-mail">info@lemive.com</a>
+							</div> -->
+							<a href="contacts.html" class="menu__item-explore">Подробнее</a>
+						</div>
+					</nav><!--menu-->
+				</div><!--/menu-wrap-->
+			</main>
+			<footer class="footer">
+				<div class="footer__copy-text">© Lemive</div>
+				<a href="https://umiks.com" class="footer__umiks-link">Разработка сайта - umiks.com</a>
+			</footer>
         </header>
-        <main class="main">
-            <div class="main__container">
-                <span class="main__subtitle">Франшиза</span>
-                <section class="business">
-                    <h2 class="business__title title">Бизнес на детской одежде</h2>
-                    <p class="business__text text">Франшиза с паушальным взносом всего 30 тыс. рублей и чистой прибылью от 87 тыс. рублей в месяц.</p>
-                    <div class="business__benefit benefit">
-                        <div class="benefit__column">
-                            <div class="benefit__item">Просто и понятно</div>
-                            <div class="benefit__item">Срок окупаемости — 8 месяцев</div>
-                        </div>
-                        <div class="benefit__column">
-                            <div class="benefit__item">Без роялти!</div>
-                            <div class="benefit__item">Поддержка от производителя</div>
-                        </div>
-                    </div>
-                </section>
-                <section class="form">
-                    <p class="form__text text">Хотите начать бизнес с нуля? Откройте магазин по продаже детской одежды от известного российского бренда «LEMIVE»!</p>
-                    <form action="submit">
-                        <h2 class="form__title">ЗАПОЛНИ ЗАЯВКУ И УЗНАЙТЕ БОЛЬШЕ!</h2>
-                        <div class="form__row">
-                            <input class="form__input" type="text" name="name" placeholder="ФИО">
-                            <input class="form__input" type="email" name="email" placeholder="Email">
-                        </div>
-                        <div class="form__row">
-                            <input class="form__input" type="tel" name="phone-number" placeholder="Номер телефона">                      
-                            <input class="form__input" type="text" name="city" placeholder="Город">
-                        </div>
-                        <button class="form__button" type="submit">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</button>
-                    </form>
-                </section>
-                <section class="calculator">
-                    <h2 class="calculator__title title">Калькулятор доходности</h2>
-                    <div class="calculator__city-check">
-                        <div class="calculator__text-select">Возможно ваш город уже занят, для проверки выберите нужный город из списка</div>
-                        <select name="city" class="calculator__select">
-                            <option selected>Выберите город</option>
-                        </select>
-                        <img class="calculator__img" src="img/icons/select-arr.svg" alt="">
-                    </div>
-                    <div class="calculator__income">
-                        <h3 class="calculator__subtitle subtitle">ВЫ ПОЛУЧИТЕ ЗА ПЕРВЫЙ МЕСЯЦ</h3>
-                        <div class="calculator__number-block number-block">
-                            <div class="number-block__item">
-                                <span class="number-block__subtitle">25% к закупу</span>
-                                <p class="number-block__title">Доход магазина</p>
-                                <span class="number-block__value number-block__value_income">603&nbsp;750&nbsp;Р.</span>
-                            </div>
-                            <div class="number-block__item">
-                                <span class="number-block__subtitle">Доход*0.5</span>
-                                <p class="number-block__title">Валовая прибыль</p>
-                                <span class="number-block__value number-block__value_gross">301&nbsp;875&nbsp;Р.</span>
-                            </div>
-                            <div class="number-block__item">
-                                <p class="number-block__title">Чистая прибыль</p>
-                                <span class="number-block__value number-block__value_profit">186&nbsp;875&nbsp;Р.</span>
-                            </div>
-                        </div>
-                        <h3 class="calculator__subtitle subtitle">ПЛОЩАДЬ МАГАЗИНА</h3>
-                        <div class="calculator__thumb-slider thumb-slider">
-                            <span class="thumb-slider__value">35 м<sup>2</sup></span>
-                            <input class="thumb-slider__input" type="range" min="0" max="30" step="1">
-                            <div class="thumb-slider__number-block">
-                                <span class="thumb-slider__element">20</span>
-                                <span class="thumb-slider__element">25</span>
-                                <span class="thumb-slider__element">30</span>
-                                <span class="thumb-slider__element">35</span>
-                                <span class="thumb-slider__element">40</span>
-                                <span class="thumb-slider__element">45</span>
-                                <span class="thumb-slider__element">50</span>
-                            </div>
-                        </div>
-                        <h3 class="calculator__subtitle subtitle">ДЕТАЛЬНАЯ ИНФОРМАЦИЯ ПО РАСХОДАМ</h3>
-                        <div class="calculator__inform inform">
-                            <div class="inform__row">
-                                <div class="inform__item">
-                                    <div class="inform__text-block">
-                                        <div class="inform__subtitle">Ежемесячно</div>
-                                        <div class="inform__text">Закуп продукции</div>
-                                    </div>
-                                    <div class="inform__price inform__price_prod">525&nbsp;000&nbsp;Р.</div>
-                                </div>
-                                <div class="inform__item">
-                                    <div class="inform__text-block">
-                                        <div class="inform__subtitle inform__subtitle_mod">Разововая вложение</div>
-                                        <div class="inform__text">Ремонт помещения</div>
-                                    </div>
-                                    <div class="inform__price inform__price_repair">420&nbsp;000&nbsp;Р.</div>
-                                </div>
-                            </div>
-                            <div class="inform__row">
-                                <div class="inform__item">
-                                    <div class="inform__text-block">
-                                        <div class="inform__subtitle">Ежемесячно</div>
-                                        <div class="inform__text">Аренда помещения</div>
-                                    </div>
-                                    <div class="inform__price inform__price_rent">70&nbsp;000&nbsp;Р.</div>
-                                </div>
-                                <div class="inform__item">
-                                    <div class="inform__text-block">
-                                        <div class="inform__subtitle inform__subtitle_mod">Разововая вложение</div>
-                                        <div class="inform__text">Паушальный взнос</div>
-                                    </div>
-                                    <div class="inform__price">30&nbsp;000&nbsp;Р.</div>
-                                </div>
-                            </div>
-                            <div class="inform__row">
-                                <div class="inform__item">
-                                    <div class="inform__text-block">
-                                        <div class="inform__subtitle">Ежемесячно</div>
-                                        <div class="inform__text">Реклама</div>
-                                    </div>
-                                    <div class="inform__price">15&nbsp;000&nbsp;Р.</div>
-                                </div>
-                                <div class="inform__item">
-                                    <div class="inform__text-block">
-                                        <div class="inform__subtitle">Ежемесячно</div>
-                                        <div class="inform__text">Зарплата на 1 продавца</div>
-                                    </div>
-                                    <div class="inform__price">30&nbsp;000&nbsp;Р.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calculator__result result">
-                            <div class="result__item">
-                                <span class="result__text">Вложения -</span>
-                                <span class="result__value result__value_invest">958 000</span>
-                            </div>
-                            <div class="result__item">
-                                <span class="result__text">Чистая прибыль -</span>
-                                <span class="result__value result__value_earn">186 500</span>
-                            </div>
-                            <div class="result__item">
-                                <span class="result__text">Примерный срок окупаемости -</span>
-                                <span class="result__value">8 мес.</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="franchise-request form">
-                    <form action="submit">
-                        <h2 class="form__title">ЗАПОЛНИ ЗАЯВКУ НА ФРАНШИЗУ</h2>
-                        <div class="form__row">
-                            <input class="form__input" type="text" name="name" placeholder="ФИО">
-                            <input class="form__input" type="email" name="email" placeholder="Email">
-                        </div>
-                        <div class="form__row">
-                            <input class="form__input" type="tel" name="phone-number" placeholder="Номер телефона">                      
-                            <input class="form__input" type="text" name="city" placeholder="Город">
-                        </div>
-                        <button class="form__button form__button_submit" type="submit">ОТПРАВИТЬ</button>
-                    </form>
-                </section>
-                <section class="about-us">
-                    <div class="about-us__video-container">
-                        <div class="about-us__background"></div>
-                        <video class="about-us__video" playsinline autoplay muted loop>
-                            <source src="video/about-us.mp4" type="video/mp4">
-                            <source src="video/about-us.webm" type="video/webm">
-                        </video>
-                    </div>
-                    <h2 class="about-us__title title">О нас</h2>
-                    <p class="about-us__text text">Мы производим детскую одежду с 2008 года. Торговая марка Милое солнышко (повседневные изделия для детей от 0 до 7 лет) была нашим стартом.</p>
-                    <p class="about-us__text text">В 2015г. создаем бренд одежды LEMIVE (Лемайф) и начинаем развивать собственную сеть розничных магазинов детских товаров.</p>
-                </section>
-                <section class="map">
-                    <h2 class="map__title title">Магазины, открытые по франшизе</h2>
-                    <img class="map__img" src="img/shops.png" alt="">
-                </section>
-                <section class="feedback">
-                    <h2 class="feedback__title title">Отзывы франчайзи</h2>
-                    <div class="feedback__slider slider">
-                        <div class="slider__container">
-                            <div class="slider__item">
-                                <iframe class="slider__video" src="https://youtu.be/Clm99CHIjE4"></iframe>
-                                <p class="slider__text">София (Новосибирск)<br/>Магазин открыт 3 года.</p>
-                            </div>
-                            <div class="slider__item">
-                                <iframe class="slider__video" src="https://youtu.be/Clm99CHIjE4"></iframe>
-                                <p class="slider__text">Николай (Екатеринбург)<br/>Магазин открыт 4 года</p>
-                            </div>
-                            <div class="slider__item">
-                                <iframe class="slider__video" src="https://youtu.be/Clm99CHIjE4"></iframe>
-                                <p class="slider__text">Николай (Екатеринбург)<br/>Магазин открыт 4 года</p>
-                            </div>
-                            <div class="slider__item">
-                                <iframe class="slider__video" src="https://youtu.be/Clm99CHIjE4"></iframe>
-                                <p class="slider__text">Николай (Екатеринбург)<br/>Магазин открыт 4 года</p>
-                            </div>
-                            <div class="slider__item">
-                                <iframe class="slider__video" src="https://youtu.be/Clm99CHIjE4"></iframe>
-                                <p class="slider__text">Николай (Екатеринбург)<br/>Магазин открыт 4 года</p>
-                            </div>
-                        </div>
-                        <div class="slider__dots">
-                            <div class="slider__dot dot-active"></div>
-                            <div class="slider__dot"></div>
-                            <div class="slider__dot"></div>
-                            <div class="slider__dot"></div>
-                            <div class="slider__dot"></div>
-                        </div>
-                    </div>
-                </section>
-                <div class="statistics">
-                    <div class="statistics__background"></div>
-                    <h2 class="staticstics__title title">О бренде в цифрах</h2>
-                    <div class="statistics__row">
-                        <div class="statistics__item statistics__item_income">
-                            <span class="statistics__subtitle">127 000 000 +</span>
-                            <p class="statistics__text">Годовой доход свыше 127 млн рублей </p>
-                        </div>
-                        <div class="statistics__item statistics__item_prod">
-                            <span class="statistics__subtitle">Производство</span>
-                            <p class="statistics__text">Собственное производство в Нижнем Тагиле</p>
-                        </div>                                      
-                    </div>
-                    <div class="statistics__row">
-                        <div class="statistics__item statistics__item_cloth">
-                            <span class="statistics__subtitle">200 000</span>
-                            <p class="statistics__text">Объем производства - 200 тыс. изделий в год</p>
-                        </div>
-                        <div class="statistics__item statistics__item_arrow">
-                            <span class="statistics__subtitle">1 200</span>
-                            <p class="statistics__text">Площадь производства 1200 кв.м</p>
-                        </div>
-                    </div>
-                    <div class="statistics__row">
-                        <div class="statistics__item statistics__item_mark">
-                            <span class="statistics__subtitle">28</span>
-                            <p class="statistics__text">Розничных магазинов</p>
-                        </div>
-                        <div class="statistics__item statistics__item_user">
-                            <span class="statistics__subtitle">12</span>
-                            <p class="statistics__text">Более 12  лет опыта </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__copy-text">© Lemive</div>
-            <a href="https://umiks.com" class="footer__umiks-link">Разработка сайта - umiks.com</a>
-        </footer>
-    </div>
-    <script src="js/franchise.js"></script>
-</body>
+		
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle">
+				<div class="cursor__side cursor__side--left"></div>
+				<div class="cursor__side cursor__side--right"></div>
+			</div>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
 </html>

@@ -796,14 +796,27 @@ form {
 .slider {
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+          user-select: none;
 }
 .slider__container {
+  transition: transform 0.8s;
+}
+.slider__container.grab {
+  cursor: grab;
+}
+.slider__container.grabbing {
+  cursor: grabbing;
+}
+.slider__track {
   display: flex;
-  transition: transform 0.8s ease;
 }
 .slider__item {
   min-width: 100%;
   margin-right: 20px;
+}
+.slider__img {
+  pointer-events: none;
 }
 .slider__text {
   margin-top: 29px;
