@@ -202,10 +202,13 @@ body.no-scroll {
     transform: translateX(0);
     transition: transform .8s ease;
 }
-.hidden {
-	background-color: transparent;
+.visualyhidden {
+	background: transparent;
     transition: background .8s ease;
-	z-index: -9999;
+}
+
+.hidden {
+	z-index: -1000;
 }
 
 .social-block {
