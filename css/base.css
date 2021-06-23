@@ -285,7 +285,7 @@ main {
 	background: url('../img/icons/yt-icon.svg') 50% 50% no-repeat;
 }
 
-/* Page Loader */
+/* Page Loader
 .js .loading::before {
 	content: '';
 	position: fixed;
@@ -311,7 +311,7 @@ main {
 	opacity: 0.4;
 	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-}
+} */
 
 @keyframes loaderAnim {
 	to {

@@ -18,16 +18,19 @@ menuBtn.addEventListener('click', () => {
 });
 
 const gridItem = document.querySelectorAll('.grid__item');
+const windowWidth = window.innerWidth;
 
-window.addEventListener('resize', move);
 
-function move() {
-    const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) / 3;
-
-    if (viewport_width <= 680) {
-        gridItem.forEach((item, i) => {
+    if (windowWidth <= 680) {
+        gridItem.forEach((item) => {
             // item.innerHTML = `<img src="img/background-${i+1}" alt="background">`;
             item.innerHTML = '';
         });
-    }   
-}
+    } else {
+        gridItem.forEach((item) => {
+            item.innerHTML = 
+            `<div class="grid__item">
+                <video src="video/background-${i+1}.mp4" class="grid__item" autoplay muted loop></video>
+            </div>`
+        });
+    }
