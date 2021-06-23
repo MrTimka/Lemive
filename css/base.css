@@ -84,6 +84,10 @@ body {
 	background-color: rgba(155, 130, 112, 0.6);
 }
 
+body.no-scroll {
+	overflow-y: hidden;
+}
+
 .cursor {
 	display: none;
 }
@@ -747,6 +751,20 @@ a:focus {
 	}
 	.footer {
 		padding: 30px 20px;
+		top: 90%;
+	}
+
+	.grid--layout-1 .grid__item {
+		background: url('../img/background-1.png') 0 0 no-repeat;
+	}
+	.grid--layout-2 .grid__item {
+		background: url('../img/background-2.jpg') 0 0 no-repeat;
+	}
+	.grid--layout-3 .grid__item {
+		background: url('../img/background-3.jpg') 0 0 no-repeat;
+	}
+	.grid--layout-4 .grid__item {
+		background: url('../img/background-4.jpg') 0 0 no-repeat;
 	}
 }
 
@@ -791,4 +809,5 @@ a:focus {
 	.footer__umiks-link {
 		margin-bottom: 10px;
 	}
+
 }

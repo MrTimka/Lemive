@@ -14,7 +14,7 @@ body.no-scroll {
 	overflow-x: hidden;
 }
 .header {
-    background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url('../img/franchise.png') center / cover;
+    background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url('../img/franchise.jpg') center / cover;
 	margin-bottom: 85px;
 
 		&__row {
@@ -50,7 +50,7 @@ body.no-scroll {
             height: 60px;
             margin-left: auto;
             cursor: pointer;
-            z-index: 2;
+            z-index: 3;
 		}
 
         &__menu-button span {
@@ -140,7 +140,7 @@ body.no-scroll {
 			background-color: #5AD5D8;
 		}
 }
-.header.production {
+.header.production-img {
 	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/production.png") center / cover;
 }
   
@@ -171,6 +171,7 @@ body.no-scroll {
 			url('../img/line1.png') 100% 32% repeat-y, 
 			url('../img/line2.png') 100% 32% repeat-y;
 			background-blend-mode: color;
+			z-index: 2;
         }
 
 		&__list {
@@ -233,22 +234,21 @@ body.no-scroll {
 		}
 }
 .main {
+	&__container {
+		max-width: 965px;
+		margin: 0 auto;
+		padding: 0 0 0 15px;
+	}
 
-		&__container {
-			max-width: 965px;
-			margin: 0 auto;
-			padding: 0 0 0 15px;
-		}
-
-		&__subtitle {
-			display: none;
-			font-family: 'Rubik';
-			font-style: normal;
-			font-weight: normal;
-			font-size: 18px;
-			line-height: 160%;
-            color: #C6AB98;
-		}
+	&__subtitle {
+		display: none;
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 160%;
+		color: #C6AB98;
+	}
 }
 .title {
 	font-family: 'Sansation';

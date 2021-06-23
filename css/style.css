@@ -180,7 +180,7 @@ body.no-scroll {
 }
 
 .header {
-  background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url("../img/franchise.png") center/cover;
+  background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url("../img/franchise.jpg") center/cover;
   margin-bottom: 85px;
 }
 .header__row {
@@ -212,7 +212,7 @@ body.no-scroll {
   height: 60px;
   margin-left: auto;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 }
 .header__menu-button span {
   position: absolute;
@@ -290,7 +290,7 @@ body.no-scroll {
   background-color: #5AD5D8;
 }
 
-.header.production {
+.header.production-img {
   background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/production.png") center/cover;
 }
 
@@ -320,6 +320,7 @@ body.no-scroll {
   position: absolute;
   background: linear-gradient(#f1eae5, #f1eae5), url("../img/line1.png") 100% 32% repeat-y, url("../img/line2.png") 100% 32% repeat-y;
   background-blend-mode: color;
+  z-index: 2;
 }
 .menu__list {
   padding: 120px 120px;
@@ -347,10 +348,13 @@ body.no-scroll {
   transition: transform 0.8s ease;
 }
 
-.hidden {
-  background-color: transparent;
+.visualyhidden {
+  background: transparent;
   transition: background 0.8s ease;
-  z-index: -9999;
+}
+
+.hidden {
+  z-index: -1000;
 }
 
 .social-block {
