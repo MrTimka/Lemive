@@ -17,14 +17,13 @@ menuBtn.addEventListener('click', () => {
     body.classList.toggle('no-scroll');
 });
 
-const gridItem = document.querySelectorAll('.grid__item');
+const gridItem = document.querySelectorAll('.grid');
 const windowWidth = window.innerWidth;
 
 
     if (windowWidth <= 680) {
         gridItem.forEach((item) => {
-            // item.innerHTML = `<img src="img/background-${i+1}" alt="background">`;
-            item.innerHTML = '';
+            item.innerHTML = `<div class="grid__item"></div>`;
         });
     } else {
         gridItem.forEach((item) => {
