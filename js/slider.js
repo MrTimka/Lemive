@@ -1,11 +1,37 @@
-const slider = document.querySelector('.slider'),
-      sliderList = document.querySelector('.slider__container_prod'),
-      sliderTrack = document.querySelector('.slider__track'),
-      sliderItems = document.querySelectorAll('.slider__item'),
-      sliderDots = document.querySelectorAll('.slider__dot'),
-      slideWidth = slides[0].offsetWidth,
-      slideIndex = 0;
+//slider
+const dots = document.querySelectorAll('.slider__dot');
+const track = document.querySelector('.slider__container');
+let scrollWidth = 970;
 
-function slide() {
-  sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
+dots.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    scrollSlides(i);
+    dots.forEach(item => {
+      item.classList.remove('dot-active');
+    });
+    item.classList.add('dot-active');
+  });
+});
+
+function scrollSlides(n) {
+  let scroll = scrollWidth * n;
+  track.style.transform = `translateX(-${scroll}px)`;
 }
+
+window.addEventListener('resize', move);
+
+function move() {
+  const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+  if (viewport_width <= 968) {
+    scrollWidth = 660;
+    if (viewport_width <= 680) {
+      scrollWidth = viewport_width - 20;
+    }
+  } else {
+    scrollWidth = 970;
+  }
+  return(scrollWidth);
+}
+
+move();

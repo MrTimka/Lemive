@@ -308,7 +308,7 @@ body.no-scroll {
   position: absolute;
   top: 0;
   background: rgba(155, 130, 112, 0.6);
-  transition: background 0.8s ease;
+  transition: all 0.8s ease;
 }
 .menu__container {
   transform: translateX(100%);
@@ -1392,7 +1392,7 @@ form {
     margin-top: 81px;
   }
   .header__button {
-    padding: 19px 32px 19px 68px;
+    padding: 19px 32px 19px 32px;
   }
 
   .title {
