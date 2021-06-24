@@ -284,7 +284,6 @@ body.no-scroll {
   cursor: pointer;
   margin-bottom: 94px;
   text-transform: uppercase;
-  margin-right: 40px;
 }
 .header__button:hover {
   background-color: #5AD5D8;
@@ -1392,7 +1391,7 @@ form {
     margin-top: 81px;
   }
   .header__button {
-    padding: 19px 32px 19px 32px;
+    padding: 19px 32px 19px 68px;
   }
 
   .title {

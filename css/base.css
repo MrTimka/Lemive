@@ -380,14 +380,27 @@ a:focus {
 
 .menu__item-contacts {
   display: flex;
-  justify-content: space-between;
   color: #ffffff;
   font-family: Rubik;
   font-weight: 500;
   font-size: 48px;
-  position: absolute;
-  opacity: 0;
   will-change: transform;
+  z-index: 1010;
+  cursor: pointer;
+  position: relative;
+  margin: 57px 0 74px 0;
+}
+
+.menu__item-tel {
+  position: absolute;
+  top: 0;
+  left: -6rem;
+}
+
+.menu__item-mail {
+  position: absolute;
+  top: 0;
+  left: 24rem;
 }
 
 .page--preview ~ .menu-wrap .menu__item {
@@ -427,6 +440,10 @@ a:focus {
   text-transform: uppercase;
   font-family: Rubik;
   font-weight: 500;
+}
+
+.menu__item:last-child  {
+  margin-top: 131px;
 }
 
 .menu__item-explore:hover,
@@ -690,6 +707,23 @@ a:focus {
   .menu__item-link {
     font-size: 71.85px;
   }
+
+  .menu__item-contacts {
+    font-size: 36px;
+    margin: 37px 0 44px 0;
+  }
+
+  .menu__item-tel {
+    left: -6rem;
+  }
+
+  .menu__item-mail {
+    left: 15rem;
+  }
+
+  .menu__item:last-child {
+    margin-top: 81px;
+  }
 }
 @media (max-width: 680px) {
   .header__title {
@@ -739,7 +773,31 @@ a:focus {
   }
 
   .menu__item-link {
-    font-size: 53.95px;
+    font-size: 36px;
+  }
+
+  .menu__item-contacts {
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    position: absolute;
+    top: 40px;
+    left: -60px;
+  }
+
+  .menu__item-tel {
+    position: static;
+  }
+
+  .menu__item-mail {
+    position: static;
+  }
+
+  .menu__item:last-child {
+    margin: 80px 0 0 60px;
+  }
+
+  .menu__item:last-child .menu__item-explore {
+    margin-top: 120px;
   }
 
   .footer {
