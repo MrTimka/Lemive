@@ -748,19 +748,19 @@ a:focus {
   }
 
   .grid--layout-1 .grid__item {
-    background: url("../img/background-1.png") 0 0 no-repeat;
+    background: url("../img/background-1.png") center/cover no-repeat;
   }
 
   .grid--layout-2 .grid__item {
-    background: url("../img/background-2.jpg") 0 0 no-repeat;
+    background: url("../img/background-2.jpg") center/cover no-repeat;
   }
 
   .grid--layout-3 .grid__item {
-    background: url("../img/background-3.jpg") 0 0 no-repeat;
+    background: url("../img/background-3.jpg") center/cover no-repeat;
   }
 
   .grid--layout-4 .grid__item {
-    background: url("../img/background-4.jpg") 0 0 no-repeat;
+    background: url("../img/background-4.jpg") center/cover no-repeat;
   }
 }
 @media (max-width: 320px) {
