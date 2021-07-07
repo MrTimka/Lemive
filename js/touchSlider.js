@@ -62,9 +62,6 @@ sliderTrack.addEventListener('mouseup', (event) => {
 sliderTrack.addEventListener('mouseenter', () => {
   sliderTrack.classList.add('grab');
 });
-sliderTrack.addEventListener('mouseout', () => {
-  sliderTrack.classList.remove('grab');
-});
 
 
 
