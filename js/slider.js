@@ -1,6 +1,6 @@
 //slider
 const dots = document.querySelectorAll('.slider__dot');
-const track = document.querySelector('.slider__container');
+const track = document.querySelector('.slider__track');
 let scrollWidth = 970;
 
 dots.forEach((item, i) => {
@@ -16,6 +16,7 @@ dots.forEach((item, i) => {
 function scrollSlides(n) {
   let scroll = scrollWidth * n;
   track.style.transform = `translateX(-${scroll}px)`;
+  console.log(scroll);
 }
 
 window.addEventListener('resize', move);
@@ -27,6 +28,7 @@ function move() {
     scrollWidth = 660;
     if (viewport_width <= 680) {
       scrollWidth = viewport_width - 20;
+      console.log(scrollWidth);
     }
   } else {
     scrollWidth = 970;
@@ -35,3 +37,4 @@ function move() {
 }
 
 move();
+

@@ -780,6 +780,7 @@ form {
 }
 
 .map {
+  width: 100%;
   position: relative;
   margin-bottom: 980px;
 }
@@ -802,17 +803,15 @@ form {
   -webkit-user-select: none;
           user-select: none;
 }
-.slider__container {
-  transition: transform 0.8s;
-}
-.slider__container.grab {
-  cursor: grab;
-}
-.slider__container.grabbing {
-  cursor: grabbing;
-}
 .slider__track {
   display: flex;
+  transition: transform 0.8s;
+}
+.slider__track.grab {
+  cursor: grab;
+}
+.slider__track.grabbing {
+  cursor: grabbing;
 }
 .slider__item {
   min-width: 100%;
@@ -1686,6 +1685,9 @@ form {
     margin-bottom: 100px;
   }
 
+  .slider__track {
+    min-width: 200px;
+  }
   .slider__img {
     width: 100%;
     height: auto;

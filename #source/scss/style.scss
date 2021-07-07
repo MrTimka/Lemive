@@ -710,6 +710,7 @@ form {
 		}
 }
 .map {
+	width: 100%;
 	position: relative;
 	margin-bottom: 980px;
 	&__title {
@@ -735,20 +736,18 @@ form {
 	display: flex;
 	flex-direction: column;
 	user-select: none;
-	&__container {
-		transition: transform .8s;
-	}
-
-	&__container.grab {
-		cursor: grab;
-	}
-
-	&__container.grabbing {
-		cursor: grabbing;
-	}
 
 	&__track {
 		display: flex;
+		transition: transform .8s;
+	}
+
+	&__track.grab {
+		cursor: grab;
+	}
+
+	&__track.grabbing {
+		cursor: grabbing;
 	}
 
 	&__item {
@@ -1819,6 +1818,10 @@ form {
 	}
 
 	.slider {
+
+		&__track {
+			min-width: 200px;
+		}
 
 		&__img {
 			width: 100%;
