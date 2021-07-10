@@ -1068,12 +1068,28 @@ form {
 
 	&__container {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	&__track {
+		width: 8600px;
+		display: flex;
+		justify-self: space-between;
+		transition: transform .6s;
+	}
+
+	&__track.grab {
+		cursor: grab;
+	}
+
+	&__track.grabbing {
+		cursor: grabbing;
 	}
 
 	&__item {
-		padding-right: 283px;
-		background: url('../img/icons/coop-slider__arr.svg') 74.5% 27% no-repeat;
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 90px;
 	}
 
 	&__subtitle {
@@ -1092,7 +1108,14 @@ form {
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 21px;
-		width: 201px;
+		width: 100%;
+	}
+
+	&__arrow {
+		width: 63px;
+		height: 20px;
+		background: url('../img/icons/coop-slider__arr.svg') 50% 50% no-repeat;
+		margin: 0 110px 0 110px;
 	}
 
 	&__buttons {
@@ -1132,6 +1155,7 @@ form {
 		width: 17px;
 		height: 33px;
 	}
+
 }
 .advantages {
 	margin-bottom: 380px;
@@ -1736,19 +1760,18 @@ form {
 
 		&__title {
 			width: 70%;
-			margin-bottom: 108px;
+			margin-bottom: 90px;
 		}
 
 		&__text {
 			font-size: 16px;
 			line-height: 19px;
-			width: 180px;
+			margin: 0;
+			width: 100%;
 		}
 
 		&__item {
-			height: 46px;
-			margin-bottom: 65px;
-		
+			margin-bottom: 80px;
 		}
 
 	}
@@ -2423,9 +2446,13 @@ form {
 		}
 
 		&__item {
-			padding-bottom: 100px;
-			margin-bottom: 70px;
-			background-position: 0 85%;
+			margin-bottom: 100px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__arrow {
+			margin: 20px 283px 0 0;
 		}
 
 		&__buttons {

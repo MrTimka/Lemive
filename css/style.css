@@ -1079,11 +1079,24 @@ form {
 }
 .coop-slider__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+.coop-slider__track {
+  width: 8600px;
+  display: flex;
+  justify-self: space-between;
+  transition: transform 0.6s;
+}
+.coop-slider__track.grab {
+  cursor: grab;
+}
+.coop-slider__track.grabbing {
+  cursor: grabbing;
 }
 .coop-slider__item {
-  padding-right: 283px;
-  background: url("../img/icons/coop-slider__arr.svg") 74.5% 27% no-repeat;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 90px;
 }
 .coop-slider__subtitle {
   font-family: "Sansation";
@@ -1100,7 +1113,13 @@ form {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  width: 201px;
+  width: 100%;
+}
+.coop-slider__arrow {
+  width: 63px;
+  height: 20px;
+  background: url("../img/icons/coop-slider__arr.svg") 50% 50% no-repeat;
+  margin: 0 110px 0 110px;
 }
 .coop-slider__buttons {
   display: flex;
@@ -1627,16 +1646,16 @@ form {
   }
   .coop-slider__title {
     width: 70%;
-    margin-bottom: 108px;
+    margin-bottom: 90px;
   }
   .coop-slider__text {
     font-size: 16px;
     line-height: 19px;
-    width: 180px;
+    margin: 0;
+    width: 100%;
   }
   .coop-slider__item {
-    height: 46px;
-    margin-bottom: 65px;
+    margin-bottom: 80px;
   }
 
   .advantages {
@@ -2147,9 +2166,12 @@ form {
     height: 510px;
   }
   .coop-slider__item {
-    padding-bottom: 100px;
-    margin-bottom: 70px;
-    background-position: 0 85%;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .coop-slider__arrow {
+    margin: 20px 283px 0 0;
   }
   .coop-slider__buttons {
     margin-top: 0;
