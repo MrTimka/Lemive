@@ -14,7 +14,7 @@ body.no-scroll {
 	overflow-x: hidden;
 }
 .header {
-    background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url('../img/franchise.jpg') center / cover;
+    background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url('../img/franchise.jpeg') center / cover;
 	margin-bottom: 85px;
 
 		&__row {
@@ -140,15 +140,15 @@ body.no-scroll {
 		}
 }
 .header.production-img {
-	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/production.png") center / cover;
+	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/production.jpeg") center / cover;
 }
   
 .header.advantages-img {
-	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/advantages.png") center / cover;
+	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/advantages.jpeg") center / cover;
 }
   
 .header.contacts-img {
-	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/contacts.png") center / cover;
+	background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/contacts.jpeg") center / cover;
 }
 .menu {
     width: 100%;
@@ -1158,7 +1158,7 @@ form {
 
 }
 .advantages {
-	margin-bottom: 380px;
+	margin-bottom: 180px;
 	&__title {
 		font-family: 'Sansation';
 		font-style: normal;
@@ -1230,7 +1230,7 @@ form {
 		height: 575px;
 		border-right: 5px solid #fff;
 		overflow: hidden;
-		// background: url("../img/example-1.png") no-repeat;
+		// background: url("../img/example-1.jpeg") no-repeat;
 		// background-size: 950px;
 	}
 
@@ -1243,12 +1243,12 @@ form {
 	}
 
 	&__img-block:nth-child(3) .examples__range-slider .examples__before-img {
-		background: url("../img/example-2.png") no-repeat;
+		background: url("../img/example-2.jpeg") no-repeat;
 		background-size: 950px;
 	}
 
 	&__img-block:last-child .examples__range-slider .examples__before-img {
-		background: url("../img/example-3.png") no-repeat;
+		background: url("../img/example-3.jpeg") no-repeat;
 		background-size: 950px;
 	}
 
@@ -1369,13 +1369,13 @@ form {
 		margin-bottom: 170px;
 
 		&_1 {
-			background-image: url('../img/production-1.png');	
+			background-image: url('../img/production-1.jpeg');	
 		}
 		&_2 {
-			background-image: url('../img/production-2.png');		
+			background-image: url('../img/production-2.jpeg');		
 		}
 		&_3 {
-			background-image: url('../img/production-4.png');	
+			background-image: url('../img/production-4.jpeg');	
 			margin-bottom: 60px;
 		}
 

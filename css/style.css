@@ -180,7 +180,7 @@ body.no-scroll {
 }
 
 .header {
-  background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url("../img/franchise.jpg") center/cover;
+  background: linear-gradient(rgba(155, 130, 112, 0.6), rgba(155, 130, 112, 0.6)), url("../img/franchise.jpeg") center/cover;
   margin-bottom: 85px;
 }
 .header__row {
@@ -290,15 +290,15 @@ body.no-scroll {
 }
 
 .header.production-img {
-  background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/production.png") center/cover;
+  background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/production.jpeg") center/cover;
 }
 
 .header.advantages-img {
-  background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/advantages.png") center/cover;
+  background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/advantages.jpeg") center/cover;
 }
 
 .header.contacts-img {
-  background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/contacts.png") center/cover;
+  background: linear-gradient(rgba(155, 130, 112, 0.7), rgba(155, 130, 112, 0.7)), url("../img/contacts.jpeg") center/cover;
 }
 
 .menu {
@@ -1154,7 +1154,7 @@ form {
 }
 
 .advantages {
-  margin-bottom: 380px;
+  margin-bottom: 180px;
 }
 .advantages__title {
   font-family: "Sansation";
@@ -1227,11 +1227,11 @@ form {
   min-height: auto;
 }
 .examples__img-block:nth-child(3) .examples__range-slider .examples__before-img {
-  background: url("../img/example-2.png") no-repeat;
+  background: url("../img/example-2.jpeg") no-repeat;
   background-size: 950px;
 }
 .examples__img-block:last-child .examples__range-slider .examples__before-img {
-  background: url("../img/example-3.png") no-repeat;
+  background: url("../img/example-3.jpeg") no-repeat;
   background-size: 950px;
 }
 .examples__range {
@@ -1319,13 +1319,13 @@ form {
   margin-bottom: 170px;
 }
 .production__img_1 {
-  background-image: url("../img/production-1.png");
+  background-image: url("../img/production-1.jpeg");
 }
 .production__img_2 {
-  background-image: url("../img/production-2.png");
+  background-image: url("../img/production-2.jpeg");
 }
 .production__img_3 {
-  background-image: url("../img/production-4.png");
+  background-image: url("../img/production-4.jpeg");
   margin-bottom: 60px;
 }
 .production__img_school {
