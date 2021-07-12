@@ -1209,7 +1209,68 @@ form {
 	}
 
 	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		margin-bottom: 15px;
+	}
+
+	&__range-slider {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+	}
+
+	&__before-img {
+		position: relative;
+		width: 50%;
+		height: 575px;
+		border-right: 5px solid #fff;
+		overflow: hidden;
+		// background: url("../img/example-1.png") no-repeat;
+		// background-size: 950px;
+	}
+
+	&__hidden {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: auto;
+		min-height: auto;
+	}
+
+	&__img-block:nth-child(3) .examples__range-slider .examples__before-img {
+		background: url("../img/example-2.png") no-repeat;
+		background-size: 950px;
+	}
+
+	&__img-block:last-child .examples__range-slider .examples__before-img {
+		background: url("../img/example-3.png") no-repeat;
+		background-size: 950px;
+	}
+
+	&__range {
+		-webkit-appearance: none;
+		position: absolute;
+		top: 0;
+		left: -2%;
+		width: 104%;
+		height: 100%;
+		background-color: transparent;
+		cursor: pointer;
+	}
+
+	&__range::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 40px;
+		height: 40px;
+		background: url("../img/icons/examples-range-arrows.svg") 50% 50% no-repeat #fff;
+		cursor: pointer;
+		border-radius: 50%;
 	}
 
 	&__text {
@@ -1797,7 +1858,11 @@ form {
 
 	.examples {
 		&__img {
-			width: 868px;
+			width: 100%;
+		}
+
+		&__hidden {
+			width: 100%;
 		}
 	}
 
@@ -2200,8 +2265,7 @@ form {
 		}
 
 		&__img {
-			width: 640px;
-			height: 385px;
+			width: 100%;
 		}
 
 		&__text {
@@ -2550,8 +2614,7 @@ form {
 
 	.examples {
 		&__img {
-			width: 280px;
-			height: 169px;
+			width: 100%;
 		}
 
 		&__text {

@@ -35,7 +35,7 @@ function applyFill(thumbSlider) {
   const bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage + 0.1}%)`;
       thumbSlider.style.background = bg;
 }
-thumbSlider.addEventListener("input", event => {
+thumbSlider.addEventListener("input", (event) => {
 	applyFill(event.target);
   output.innerHTML = `${+thumbSlider.value + 20} м<sup>2</sup>`;
   income.innerHTML = `${fillArray(incomeValue, 345000, 362250)[thumbSlider.value].toLocaleString('ru-RU', 'currency')}&nbsp;Р.`;
