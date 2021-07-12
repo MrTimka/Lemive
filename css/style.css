@@ -1058,7 +1058,7 @@ form {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 295px;
+  margin-bottom: 195px;
 }
 .coop-slider__background {
   position: absolute;
@@ -1690,7 +1690,7 @@ form {
   }
 
   .coop-slider {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .coop-slider__background {
     height: 429px;
@@ -1996,7 +1996,7 @@ form {
   }
 
   .coop-slider {
-    margin-bottom: 260px;
+    margin-bottom: 160px;
   }
   .coop-slider__background {
     height: 429px;
@@ -2094,7 +2094,7 @@ form {
 }
 @media (max-width: 600px) {
   .coop-slider {
-    margin-bottom: 160px;
+    margin-bottom: 100px;
   }
   .coop-slider__title {
     width: 100%;
@@ -2251,7 +2251,7 @@ form {
   }
 
   .coop-slider {
-    margin-bottom: 160px;
+    margin-bottom: 100px;
   }
   .coop-slider__title {
     width: 100%;
@@ -2356,5 +2356,10 @@ form {
   }
   .footer__umiks-link {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 371px) {
+  .coop-slider__item {
+    margin-bottom: 70px;
   }
 }

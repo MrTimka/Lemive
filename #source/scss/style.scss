@@ -1046,7 +1046,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	margin-bottom: 295px;
+	margin-bottom: 195px;
 	&__background {
 		position: absolute;
 		top: -120px;
@@ -1813,7 +1813,7 @@ form {
 	}
 
 	.coop-slider {
-		margin-bottom: 200px;
+		margin-bottom: 100px;
 		&__background {
 			height: 429px;
 			top: -13%;
@@ -2212,7 +2212,7 @@ form {
 	}
 
 	.coop-slider {
-		margin-bottom: 260px;
+		margin-bottom: 160px;
 		&__background {
 			height: 429px;
 		}
@@ -2347,7 +2347,7 @@ form {
 
 @media (max-width: 600px) {
 	.coop-slider {
-		margin-bottom: 160px;
+		margin-bottom: 100px;
 		&__title {
 			width: 100%;
 		}
@@ -2551,7 +2551,7 @@ form {
 		}
 	}
 	.coop-slider {
-		margin-bottom: 160px;
+		margin-bottom: 100px;
 		&__title {
 			width: 100%;
 		}
@@ -2695,6 +2695,8 @@ form {
 	}
 }
 
-
-
-
+@media (max-width: 371px) {
+	.coop-slider__item {
+		margin-bottom: 70px;
+	}
+}
