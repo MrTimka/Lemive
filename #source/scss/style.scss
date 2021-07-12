@@ -2152,6 +2152,14 @@ form {
 			height: 429px;
 		}
 
+		&__item:nth-child(7) .coop-slider__text-block {
+			width: 60%;
+		}
+
+		&__item:nth-child(7) .coop-slider__arrow {
+			margin-left: 30px;
+		}
+
 		&__title {
 			margin-top: 0;
 			width: 400px;
@@ -2273,6 +2281,49 @@ form {
 
 }
 
+@media (max-width: 600px) {
+	.coop-slider {
+		margin-bottom: 160px;
+		&__title {
+			width: 100%;
+		}
+
+		&__background {
+			height: 510px;
+		}
+
+		&__item {
+			margin-bottom: 115px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__item:nth-child(6) .coop-slider__text-block {
+			width: 80%;
+		}
+
+		&__item:nth-child(7) .coop-slider__text-block {
+			width: 55%;
+		}
+
+		&__item:nth-child(7) .coop-slider__arrow {
+			margin-left: 0;
+		}
+
+		&__item:nth-child(10) .coop-slider__text-block {
+			width: 55%;
+		}
+
+		&__arrow {
+			margin: 20px 383px 0 0;
+		}
+
+		&__buttons {
+			margin-top: 0;
+		}
+
+	}
+}
 
 @media (max-width: 320px) {
 	.header {
@@ -2446,9 +2497,21 @@ form {
 		}
 
 		&__item {
-			margin-bottom: 100px;
+			margin-bottom: 60px;
 			flex-direction: column;
 			align-items: flex-start;
+		}
+
+		&__item:nth-child(6) .coop-slider__text-block {
+			width: 80%;
+		}
+
+		&__item:nth-child(7) .coop-slider__text-block {
+			width: 45%;
+		}
+
+		&__item:nth-child(10) .coop-slider__text-block {
+			width: 45%;
 		}
 
 		&__arrow {

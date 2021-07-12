@@ -32,7 +32,7 @@ function isDisabled() {
 isDisabled();
 
 nextArr.addEventListener('click', () => {
-    if (slideIndex < 9) {
+    if (slideIndex < 10) {
         scrollSlide(++slideIndex);
         isDisabled();
     }
