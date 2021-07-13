@@ -739,14 +739,14 @@ form {
 
 	&__track {
 		display: flex;
-		transition: transform .8s;
+		transform: translate3d(0px, 0px, 0px);
 	}
 
-	&__track.grab {
+	&__container.grab {
 		cursor: grab;
 	}
 
-	&__track.grabbing {
+	&__container.grabbing {
 		cursor: grabbing;
 	}
 
@@ -1075,14 +1075,14 @@ form {
 		width: 8600px;
 		display: flex;
 		justify-self: space-between;
-		transition: transform .6s;
+		pointer-events: none;
 	}
 
-	&__track.grab {
+	&__container.grab {
 		cursor: grab;
 	}
 
-	&__track.grabbing {
+	&__container.grabbing {
 		cursor: grabbing;
 	}
 
@@ -1152,6 +1152,7 @@ form {
 	}
 
 	&__btn-arr {
+		pointer-events: none;
 		width: 17px;
 		height: 33px;
 	}
