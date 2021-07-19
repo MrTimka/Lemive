@@ -167,6 +167,10 @@ h6 {
   font-size: inherit;
 }
 
+html {
+  --thumb-left: 50%;
+}
+
 body.no-scroll {
   overflow-y: hidden;
 }
@@ -1222,6 +1226,7 @@ form {
   height: 575px;
   border-right: 5px solid #fff;
   overflow: hidden;
+  transition: width 0.2s;
 }
 .examples__hidden {
   position: absolute;
@@ -1242,20 +1247,29 @@ form {
   -webkit-appearance: none;
   position: absolute;
   top: 0;
-  left: -2%;
-  width: 104%;
+  left: 0%;
+  width: 100%;
   height: 100%;
   background-color: transparent;
   cursor: pointer;
+  z-index: 2;
+}
+.examples__thumb {
+  position: absolute;
+  top: 45%;
+  left: 455px;
+  width: 40px;
+  height: 40px;
+  background: url("../img/icons/examples-range-arrows.svg") 50% 50% no-repeat #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: left 0.2s;
 }
 .examples__range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 40px;
   height: 40px;
-  background: url("../img/icons/examples-range-arrows.svg") 50% 50% no-repeat #fff;
-  cursor: pointer;
-  border-radius: 50%;
 }
 .examples__text {
   font-family: "Rubik";
@@ -1730,6 +1744,9 @@ form {
 
   .examples__img {
     width: 100%;
+  }
+  .examples__thumb {
+    left: 412px;
   }
   .examples__hidden {
     width: 100%;
